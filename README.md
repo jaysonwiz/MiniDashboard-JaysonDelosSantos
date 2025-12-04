@@ -4,8 +4,26 @@ A full‑stack exam project combining a Web API, WPF desktop application, and au
 The solution applies Clean Architecture principles, ensuring separation of concerns, contract‑first design, dependency injection, and maintainability.  
 It also integrates Swagger/OpenAPI for interactive API documentation and testing.
 
----
+##  How to Run
 
+### Run the Web API
+1. Navigate to the **MiniDashboard.Api** project.  
+2. Run with `dotnet run` or via Visual Studio.  
+3. The API will start at `http://localhost:5125` (default from launchSettings).  
+4. Open `http://localhost:5125/swagger` in a browser to explore endpoints via Swagger/OpenAPI.  
+
+### Run the WPF Desktop App
+⚠️ **Important:** Make sure the Web API is running before launching the desktop app.  
+
+1. Navigate to the **MiniDashboard.App** project.  
+2. Run with F5 in Visual Studio.  
+3. The app consumes the API via `HttpClient` (base URL `http://localhost:5125`).  
+4. UI updates in real time thanks to **INotifyPropertyChanged** and **ObservableCollection**.  
+5. For demonstration purposes:  
+  - Added `await Task.Delay(5000)` (5 seconds) when **loading products** to test the loading screen UI.  
+  - Added `await Task.Delay(3000)` (3 seconds) when **searching products** to test the loading screen UI.
+---
+# Project Structure
 ##  Entities
 - Defines the structure of the tables used in the application.  
 - In this exam, the only entity is Product.  
@@ -68,9 +86,6 @@ It also integrates Swagger/OpenAPI for interactive API documentation and testing
 - **ViewModels**: Where API calls happen, bridging the desktop app to the Web API.  
 - **Views**: The actual XAML designs for each screen.  
 - Implements **INotifyPropertyChanged** and **ObservableCollection** to update the UI in real time when data changes.  
-- For demonstration purposes:  
-  - Added `await Task.Delay(5000)` (5 seconds) when **loading products** to test the loading screen UI.  
-  - Added `await Task.Delay(3000)` (3 seconds) when **searching products** to test the loading screen UI.
     
 ### App.xaml.cs
 - Configured with IHost (Microsoft.Extensions.Hosting) to enable Dependency Injection in the desktop app.  
