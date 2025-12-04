@@ -68,7 +68,10 @@ It also integrates Swagger/OpenAPI for interactive API documentation and testing
 - **ViewModels**: Where API calls happen, bridging the desktop app to the Web API.  
 - **Views**: The actual XAML designs for each screen.  
 - Implements **INotifyPropertyChanged** and **ObservableCollection** to update the UI in real time when data changes.  
-
+- For demonstration purposes:  
+  - Added `await Task.Delay(5000)` (5 seconds) when **loading products** to test the loading screen UI.  
+  - Added `await Task.Delay(3000)` (3 seconds) when **searching products** to test the loading screen UI.
+    
 ### App.xaml.cs
 - Configured with IHost (Microsoft.Extensions.Hosting) to enable Dependency Injection in the desktop app.  
 - Registered all Views, ViewModels, and HttpClient services.  
