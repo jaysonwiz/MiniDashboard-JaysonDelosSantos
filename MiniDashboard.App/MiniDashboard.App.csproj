@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\Icons\delete.png" />
+    <None Remove="Assets\Images\Icons\edit.png" />
+    <None Remove="Assets\Images\Icons\magnifying-glass.png" />
+    <None Remove="Assets\Images\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Icons\delete.png" />
+    <Resource Include="Assets\Images\Icons\edit.png" />
+    <Resource Include="Assets\Images\Icons\magnifying-glass.png" />
+    <Resource Include="Assets\Images\logo.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="MiniDashboard.App.Components.Navigation.NavBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MiniDashboard.App.Components.Navigation"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Orientation="Horizontal" Margin="10,0,0,0" HorizontalAlignment="Left" Width="190">
+        <ItemsControl ItemsSource="{Binding MenuItems}" Width="207">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <RadioButton IsChecked="{Binding IsChecked, Mode=TwoWay}" 
+                     Style="{StaticResource NavButtonStyle}" 
+                     Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                     CommandParameter="{Binding ViewName}"
+                     GroupName="NavGroup"
+                     AutomationProperties.AutomationId="{Binding ViewName}"
+                     Margin="5" Padding="10">
+
+                        <!-- Keep original layout, just wrap Title with icon -->
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <!-- Image as Icon -->
+                            <!--<Image Source="{Binding Image}" Width="32" Height="32" />-->
+                            <!-- Title Text -->
+                            <TextBlock Text="{Binding Title}" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </RadioButton>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+
+        </ItemsControl>
+    </StackPanel>
+</UserControl>

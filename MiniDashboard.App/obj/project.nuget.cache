@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zuj5ycQnqPs=",
+  "success": true,
+  "projectFilePath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.App\\MiniDashboard.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iRipple\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.0\\microsoft.extensions.configuration.binder.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.commandline\\10.0.0\\microsoft.extensions.configuration.commandline.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\10.0.0\\microsoft.extensions.configuration.environmentvariables.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.0\\microsoft.extensions.configuration.fileextensions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.0\\microsoft.extensions.configuration.json.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\10.0.0\\microsoft.extensions.configuration.usersecrets.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0\\microsoft.extensions.dependencyinjection.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.diagnostics\\10.0.0\\microsoft.extensions.diagnostics.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.0\\microsoft.extensions.diagnostics.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.0\\microsoft.extensions.fileproviders.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.0\\microsoft.extensions.fileproviders.physical.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.0\\microsoft.extensions.filesystemglobbing.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.hosting\\10.0.0\\microsoft.extensions.hosting.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.0\\microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0\\microsoft.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.configuration\\10.0.0\\microsoft.extensions.logging.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.console\\10.0.0\\microsoft.extensions.logging.console.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.debug\\10.0.0\\microsoft.extensions.logging.debug.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.eventlog\\10.0.0\\microsoft.extensions.logging.eventlog.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.logging.eventsource\\10.0.0\\microsoft.extensions.logging.eventsource.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.options\\10.0.0\\microsoft.extensions.options.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.0\\microsoft.extensions.options.configurationextensions.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.0\\system.diagnostics.eventlog.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\system.io.pipelines\\10.0.0\\system.io.pipelines.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\system.text.encodings.web\\10.0.0\\system.text.encodings.web.10.0.0.nupkg.sha512",
+    "C:\\Users\\iRipple\\.nuget\\packages\\system.text.json\\10.0.0\\system.text.json.10.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'FontAwesome.WPF 4.7.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.App\\MiniDashboard.App.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.App\\MiniDashboard.App.csproj",
+      "libraryId": "FontAwesome.WPF",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

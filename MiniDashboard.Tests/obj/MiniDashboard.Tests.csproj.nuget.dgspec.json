@@ -1,0 +1,569 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Tests\\MiniDashboard.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\MiniDashboard.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\MiniDashboard.Api.csproj",
+        "projectName": "MiniDashboard.Api",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\MiniDashboard.Api.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\Repositories.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Tests\\MiniDashboard.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Tests\\MiniDashboard.Tests.csproj",
+        "projectName": "MiniDashboard.Tests",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Tests\\MiniDashboard.Tests.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\DaifukuWebAPI\\MiniDashboard.Api.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\DaifukuWebAPI\\MiniDashboard.Api.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\MiniDashboard.Api.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\MiniDashboard.Api\\MiniDashboard.Api.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectName": "RepositoryContracts",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj",
+        "projectName": "ServiceContracts",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\iRipple\\.nuget\\packages\\",
+        "outputPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iRipple\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
+              "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard-JaysonDelosSantos\\ServiceContracts\\ServiceContracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

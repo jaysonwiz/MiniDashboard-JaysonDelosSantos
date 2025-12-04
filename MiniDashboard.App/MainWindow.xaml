@@ -1,0 +1,68 @@
+﻿<Window x:Class="MiniDashboard.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniDashboard.App"
+        xmlns:nav="clr-namespace:MiniDashboard.App.Components.Navigation"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Title="MainWindow" Height="763" Width="1200" Background="{x:Null}" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <!-- Sidebar -->
+            <ColumnDefinition Width="*"/>
+            <!-- Content -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Border Grid.Column="0" 
+         Background="#FFF7F7F7" 
+         CornerRadius="20,0,0,20" 
+         Margin="10">
+            <Grid>
+                <!-- Logo -->
+                <Grid Margin="0,0,0,580">
+                    <Image Margin="0,0,1,0" Source="pack://application:,,,/MiniDashboard.App;component/Assets/Images/logo.png" />
+                </Grid>
+                <!-- Logo -->
+                <!-- Navigation -->
+                <nav:NavBar DataContext="{Binding NavBarVm}" Margin="0,168,0,0" />
+
+                <!-- Logout -->
+            </Grid>
+        </Border>
+        <!-- Top Bar Area -->
+        <!-- Main Content Area -->
+        <Grid Grid.Column="1" Background="White">
+            <Border
+                 Margin="0,54,10,10"
+                 CornerRadius="12"
+                 Background="White">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black"
+                   BlurRadius="12"
+                   ShadowDepth="2"
+                   Opacity="0.2"/>
+                </Border.Effect>
+
+                <ContentControl Content="{Binding CurrentView}"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"/>
+            </Border>
+
+        </Grid>
+
+        <!-- Dimming overlay -->
+        <Grid x:Name="Overlay"  
+   Grid.ColumnSpan="2"
+   Background="#80000000"
+   Panel.ZIndex="100"
+   Visibility="Collapsed"
+   IsHitTestVisible="False" />
+
+    </Grid>
+
+</Window>

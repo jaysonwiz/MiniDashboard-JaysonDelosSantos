@@ -1,0 +1,69 @@
+﻿<Window x:Class="MiniDashboard.App.Views.ProductAddEditView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniDashboard.App.Views"
+        AutomationProperties.AutomationId="ProductAddEditDialog"
+        mc:Ignorable="d"
+       Title="Add/Edit Product" Width="500"
+        WindowStartupLocation="CenterOwner"
+        AutomationProperties.HelpText="{Binding IsEdit}"
+        ResizeMode="NoResize"
+        WindowStyle="None" 
+        AllowsTransparency="True" SizeToContent="Manual"
+        Background="Transparent">
+    <Grid x:Name="RootGrid">
+        <Border Background="White" CornerRadius="15" Padding="20" 
+                BorderBrush="#DDD" BorderThickness="1" 
+                SnapsToDevicePixels="True" Margin="0,0,0,0" >
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Title -->
+                    <RowDefinition/>
+                    <!-- Content -->
+                    <RowDefinition Height="Auto" MinHeight="66.04"/>
+                    <!-- Buttons -->
+                </Grid.RowDefinitions>
+                <!-- Form Content -->
+                <!--<ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">-->
+                <Grid Margin="0,37,0,0" Grid.RowSpan="2" Height="65" VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <!--  Name -->
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Name -->
+                    <TextBlock Grid.Row="0" Grid.Column="0"  Text="Name:" VerticalAlignment="Center" Margin="0,5" Style="{StaticResource FormLabel}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1"  Text="{Binding ProductName, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Style="{StaticResource FormTextBox}"/>
+
+                </Grid>
+                <!--</ScrollViewer>-->
+                <!-- Buttons -->
+                <TextBlock Text="{Binding PageTitle}" 
+                    VerticalAlignment="Top"
+                    FontFamily="Segoe UI Semilight" 
+                    FontSize="20" 
+                    Margin="50,1,50,0" Grid.RowSpan="2" Height="27" TextAlignment="Center"/>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0" Width="220">
+                    <Button Content="Save" Width="100" Height="35" Margin="5"
+                    Style="{StaticResource FormButtonSuccess}"
+                    Command="{Binding SaveProductCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"/>
+                    <Button Content="Cancel" Width="100" Height="35" Margin="5"
+                    Style="{StaticResource FormButtonCancel}"
+                    Command="{Binding CloseProductCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <!-- Overlay -->
+        <Grid x:Name="Overlay" Background="#80000000" Visibility="Collapsed" />
+    </Grid>
+</Window>

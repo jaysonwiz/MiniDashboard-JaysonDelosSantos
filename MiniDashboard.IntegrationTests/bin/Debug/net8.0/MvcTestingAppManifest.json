@@ -1,0 +1,8 @@
+{
+  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\Entities",
+  "MiniDashboard.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\MiniDashboard.Api",
+  "Repositories, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\Repositories",
+  "RepositoryContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\RepositoryContracts",
+  "ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\ServiceContracts",
+  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Daifuku\\DaifukuWebAPI\\Services"
+}

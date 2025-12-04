@@ -1,0 +1,19 @@
+﻿<Application x:Class="MiniDashboard.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MiniDashboard.App.Converters">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Navigation.xaml"/>
+                <ResourceDictionary Source="Styles/SearchBar.xaml"/>
+                <ResourceDictionary Source="Styles/Buttons.xaml"/>
+                <ResourceDictionary Source="Styles/DataGridGlassy.xaml"/>
+                <ResourceDictionary Source="Styles/Forms.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Add converter here -->
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

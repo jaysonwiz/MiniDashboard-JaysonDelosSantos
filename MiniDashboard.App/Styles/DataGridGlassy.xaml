@@ -1,0 +1,133 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Glassy/Rounded DataGrid Style -->
+    <Style x:Key="GlassyDataGridStyle" TargetType="DataGrid">
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="CanUserAddRows" Value="False"/>
+        <Setter Property="CanUserDeleteRows" Value="False"/>
+        <Setter Property="CanUserResizeRows" Value="False"/>
+        <Setter Property="IsReadOnly" Value="True"/>
+        <!-- Make all cells read-only -->
+        <Setter Property="GridLinesVisibility" Value="None"/>
+        <Setter Property="RowBackground" Value="White"/>
+        <Setter Property="AlternatingRowBackground" Value="#FAFAFA"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="LightGray"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="HeadersVisibility" Value="Column"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="#E0E0E0"/>
+        <Setter Property="VerticalGridLinesBrush" Value="#E0E0E0"/>
+        <Setter Property="RowHeight" Value="35"/>
+    </Style>
+
+    <!-- Glassy Column Header Style -->
+    <Style x:Key="GlassyColumnHeaderStyle" TargetType="DataGridColumnHeader">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#E6FFFFFF" Offset="0"/>
+                    <GradientStop Color="#CCFFFFFF" Offset="0.5"/>
+                    <GradientStop Color="#99FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#888888" BlurRadius="4" ShadowDepth="1" Opacity="0.25"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="5,3"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="Height" Value="38"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridColumnHeader">
+                    <Border Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Glassy DataGrid Row Style -->
+
+    <Style x:Key="GlassyDataGridRowStyle" TargetType="DataGridRow">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridRow">
+                    <Border x:Name="DGR_Border"
+                        Background="{TemplateBinding Background}"
+                        SnapsToDevicePixels="True">
+                        <SelectiveScrollingGrid>
+                            <SelectiveScrollingGrid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </SelectiveScrollingGrid.ColumnDefinitions>
+                            <SelectiveScrollingGrid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="0"/>
+                            </SelectiveScrollingGrid.RowDefinitions>
+                            <DataGridCellsPresenter Grid.Row="0" Grid.Column="0"/>
+                            <DataGridDetailsPresenter Grid.Row="1" Grid.Column="0"/>
+                        </SelectiveScrollingGrid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!-- Custom selection color -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="DGR_Border" Property="Background" Value="#E6F0FA"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <!-- pale blue -->
+                        </Trigger>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="DGR_Border" Property="Background" Value="#E6F0FA"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Custom DataGridCell Style -->
+    <Style x:Key="GlassyDataGridCellStyle" TargetType="DataGridCell">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="5,2"/>
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridCell">
+                    <Border x:Name="CellBorder"
+                        Background="{TemplateBinding Background}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!-- Selected cell -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="CellBorder" Property="Background" Value="#E6F0FA"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                        <!-- Hover effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="CellBorder" Property="Background" Value="#E6F0FA"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,53 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="TextBox" x:Key="SearchBarStyle">
+        <Setter Property="Background" Value="#F0F0F0"/>
+        <Setter Property="BorderBrush" Value="#D3D3D3"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Height" Value="28"/>
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Padding" Value="28,0,4,0"/>
+        <!-- extra left padding for icon -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Grid>
+                        <!-- Background and Shadow -->
+                        <Border x:Name="Border"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Gray" BlurRadius="4" ShadowDepth="1" Opacity="0.1"/>
+                            </Border.Effect>
+                            <ScrollViewer x:Name="PART_ContentHost" Margin="0"/>
+                        </Border>
+
+                        <!-- Search Icon overlayed inside -->
+                        <Image Source="/Assets/Images/Icons/magnifying-glass.png"
+                               Width="20" Height="20"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Margin="8,0,0,0"
+                               IsHitTestVisible="False"/>
+                        <!-- prevents blocking text input -->
+                    </Grid>
+
+                    <!-- Triggers -->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="White"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="White"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

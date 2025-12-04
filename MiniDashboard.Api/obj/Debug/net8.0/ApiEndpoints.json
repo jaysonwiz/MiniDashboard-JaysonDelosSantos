@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "GetProductByID",
+    "RelativePath": "Products/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "Create",
+    "RelativePath": "Products/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryAddRequest",
+        "Type": "ServiceContracts.DTO.ProductAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "Delete",
+    "RelativePath": "Products/Delete/{productId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "GetAll",
+    "RelativePath": "Products/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "Search",
+    "RelativePath": "Products/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DaifukuWebAPI.Controllers.ProductsController",
+    "Method": "Update",
+    "RelativePath": "Products/Update/{productId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productUpdateRequest",
+        "Type": "ServiceContracts.DTO.ProductUpdateRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "productId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

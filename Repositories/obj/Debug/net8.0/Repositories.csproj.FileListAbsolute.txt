@@ -1,0 +1,17 @@
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\Entities.dll
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\RepositoryContracts.dll
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\Entities.pdb
+D:\Daifuku\DaifukuWebAPI\Repositories\bin\Debug\net8.0\RepositoryContracts.pdb
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\Daifuku\DaifukuWebAPI\Repositories\obj\Debug\net8.0\ref\Repositories.dll
